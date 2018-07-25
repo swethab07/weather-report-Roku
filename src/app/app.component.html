@@ -3,7 +3,7 @@
     <div class="weatherHead">
       <div>
         <span class="today"></span><br>
-          <img src="/assets/images/art_Clear.png"/><br>{{weather.list[0].weather[0].description}}<br>
+          <img src="/assets/images/art_{{weather.list[0].weather[0].main}}.png"/><br>{{weather.list[0].weather[0].description}}<br>
             <span class="minTemp">{{weather.list[0].dt_txt|date}}</span><br>
             <span>{{weather.list[0].main.temp}}&deg;</span>
     </div>
