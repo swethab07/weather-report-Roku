@@ -1,0 +1,55 @@
+.weatherHead
+{
+	margin-top:2em;	
+}
+
+.container{
+	background-color: #57ade5;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.weatherImg{
+	margin-top: -5rem;
+	width: 50%;
+}
+
+.subHeading{
+	margin-top: -5rem;
+	margin-left: 2rem;
+	color: grey;
+}
+
+.weatherHead img{
+	width:10%;
+	height: 100px;
+}
+
+.today{
+	text-align: center;
+	color:white;
+}
+
+.minTemp{
+	color:white;
+}
+
+.weatherBodyContent{
+	background: #d9d9d9;
+	margin-top:0.3rem;
+}
+
+.weatherBody{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.weatherBody > div {
+  background-color: #d9d9d9;
+  width: 10em;
+  margin: 1rem;
+  text-align: center;
+  line-height: 75px;
+}

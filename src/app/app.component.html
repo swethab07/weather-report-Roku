@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Weather App</h1>
+    <div class="weatherHead">
+      <div>
+        <span class="today"></span><br>
+          <img src="/assets/images/art_Clear.png"/><br>{{weather.list[0].weather[0].description}}<br>
+            <span class="minTemp">{{weather.list[0].dt_txt|date}}</span><br>
+            <span>{{weather.list[0].main.temp}}&deg;</span>
+    </div>
+    </div>
+    <div class ="weatherBody">
+      <div class="weatherBodyContent" *ngFor="let item of perDayWeather; let count=index">
+        <div>{{days[count]}}<br><img class="weatherImg" src="/assets/images/art_{{item.weather[0].main}}.png"></div> 
+        <span>{{item.main.temp}}&deg;</span>
+        <div class="subHeading">{{item.weather[0].description}}</div>        
+      </div>
+      </div>
+</div>
